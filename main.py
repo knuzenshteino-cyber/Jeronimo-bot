@@ -3,6 +3,8 @@ import logging
 import os
 import platform
 import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.resolve()))
 import threading
 from aiohttp.web import Application, run_app
 from flask import Flask, jsonify
