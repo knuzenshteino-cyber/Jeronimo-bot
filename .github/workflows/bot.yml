@@ -21,10 +21,9 @@ jobs:
         run: pip install poetry
 
       - name: Install dependencies
-        run: poetry install --no-root
+        run: poetry install
 
       - name: Run Bot
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          PYTHONPATH: .
         run: poetry run python main.py
