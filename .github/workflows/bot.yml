@@ -27,4 +27,4 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           PYTHONPATH: .
-        run: poetry run python main.py
+        run: poetry run python -m main
